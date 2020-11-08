@@ -322,7 +322,7 @@ app.get('/home', function (req, res) {
  
     // Read all the documents in "veiculo" collection
 	conexao.connect(url, /*{useNewUrlParser: true,useUnifiedTopology: true},*/ function(err, db) {
-  		if (err){ throw err; res.send("Erro");}
+  		if (err) throw err;
   		var resultado;
   		var dbo = db.db(database);
   		dbo.collection(collection1).find().toArray(function(err, result) {
