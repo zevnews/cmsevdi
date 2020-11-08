@@ -29,10 +29,13 @@ var url = "mongodb://localhost:27017";
 var database = "copia_evdi_kinghost";
 var collection1 = "vehicles";*/
 
-var url = "mongodb+srv://zevnews:zevnews2020@zevnewsatlas.sqtdl.mongodb.net/zevnewsatlas?retryWrites=true&w=majority";
+/*var url = "mongodb+srv://zevnews:zevnews2020@zevnewsatlas.sqtdl.mongodb.net/zevnewsatlas?retryWrites=true&w=majority";
 var database = "zevnewsatlas";
-var collection1 = "vehicles";
+var collection1 = "vehicles";*/
 
+var url = "mongodb://zevcms:zevnews2020@geonosis.mongodb.umbler.com:37319/mongo_zcms";
+var database = "mongo_zcms";
+var collection1 = "vehicles";
 
 var cookieSession = require('cookie-session');
 app.set('trust proxy', 1) // trust first proxy
