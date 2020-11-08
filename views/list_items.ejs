@@ -1,0 +1,10 @@
+<a href="<%= routePath%>/create">Create</a>
+			<ul>
+				<% result.forEach((result) => { %>
+			       <li><%= result.brand %>
+       					<a href="<%= routePath%>remove/<%= result._id %>">Delete</a>
+       					<a href="<%= routePath%>update/<%= result._id %>">Update</a>
+       				</li>
+
+      			<%}) %>
+			<ul>

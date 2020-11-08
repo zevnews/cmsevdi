@@ -1,0 +1,14 @@
+ <h1>CMS ZEVCMS 2 - Com rotas</h1>
+
+<a href="<%= routePath%>create">Create</a><br >
+<% result.forEach((result) => { %>
+       <%= result.brand %><a href="<%= routePath%>remove/<%= result._id %>">Delete</a>  --- 
+       ><a href="<%= routePath%>update/<%= result._id %>">Atualizar</a>
+       <br />
+
+      <%
+    }) %>
+    <hr> 
+
+
+

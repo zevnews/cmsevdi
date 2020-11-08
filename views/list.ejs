@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+ 		<meta name="viewport" content="width=device-width" />
+ 		<title>JavaScript Demo</title>
+ 		<link rel="stylesheet" type="text/css" href="<%= routePath%>css/style.css"> 
+  	</head>
+
+<body>
+	<div id="container">
+		<div id="main_menu">
+ 			<h1>Vehicles Data Search (EVDI)</h1>
+		</div>
+
+		<div id="content">
+			<a href="<%= routePath%>/create">Create</a>
+			<ul>
+				<% result.forEach((result) => { %>
+			       <li><%= result.brand %>
+       					<a href="/remove/<%= result._id %>">Delete</a>
+       					<a href="/update/<%= result._id %>">Update</a>
+       				</li>
+
+      			<%}) %>
+			<ul>
+		</div>
+		<footer id="cms_footer">
+			Conteudo básico do footer
+		</footer>
+	</div>  
+</body>
+
+</html>
+
+
+

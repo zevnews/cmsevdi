@@ -1,0 +1,64 @@
+ <section class="create_document_section">
+  <a href="<%= routePath%>">LIST VEHICLES</a>
+</section>
+ <% result.forEach((result) => { %>
+ <form action="/zevcms/update" method="post">
+  
+  <div class="document_feature">
+    <label for="vtype">Type:</label>
+    <input type="text" id="vtype" name="vtype" value="<%= result.vtype%>" >
+
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand" name="brand" value="<%= result.brand%>">
+
+    <label for="model">Model:</label>
+    <input type="text" id="model" name="model" value="<%= result.model%>">
+  </div>
+  
+  <div class="document_feature">
+    <label for="type">Power:</label>
+    <input type="text" id="power" name="power">
+
+    <label for="type">Torque:</label>
+    <input type="text" id="torque" name="torque">
+
+    <label for="type">Motors:</label>
+    <input type="text" id="motors" name="motors">
+  </div>
+ 
+
+  <div class="document_feature">
+    <label for="battery">Battery:</label>
+    <input type="text" id="battery" name="battery">
+
+    <label for="battery">Range:</label>
+    <input type="text" id="range" name="range">
+  </div>
+
+
+  <div class="document_feature">
+    <label for="acceleration">Aceleration:</label>
+    <input type="text" id="acceleration" name="acceleration">
+
+    <label for="speed">Speed:</label>
+    <input type="text" id="speed" name="speed">
+  </div>
+
+  <div class="document_feature">
+    <label for="weight">Weight:</label>
+    <input type="text" id="weight" name="weight">
+
+    <label for="width">Width:</label>
+    <input type="text" id="width" name="width">
+
+    <label for="lenght">Lenght:</label>
+    <input type="text" id="lenght" name="lenght">
+
+    <label for="height">Height:</label>
+    <input type="text" id="height" name="height">
+     <input type="submit" value="Update Vehicle">
+  </div>
+
+  <input type="hidden" id="_id" name="_id" value="<%= result._id %>">
+</form> 
+<%});%>

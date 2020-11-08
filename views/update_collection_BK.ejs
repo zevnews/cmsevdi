@@ -1,0 +1,15 @@
+ <% result.forEach((result) => { %>
+
+ <form action="<%= routePath%>update" method="post">
+  <label for="brand">Brand</label><br>
+  <input type="text" id="brand" name="brand" value="<%= result.brand %>"><br>
+  <label for="Model">Model</label><br>
+  <input type="text" id="model" name="model" value="<%= result.model %>">
+  <input type="hidden" id="_id" name="_id" value="<%= result._id %>">
+  <input type="submit" value="Inserir">z
+</form> 
+
+<%});%>
+
+
+ 

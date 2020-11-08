@@ -1,0 +1,56 @@
+@media only screen and (max-width: 480px) {
+  
+
+ #main_menu{
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width:  100%;
+	height: 60px;
+}
+
+#main_title{
+	width: 100%;
+	text-align: center;
+	padding: 1%;
+	font-size: 15pt;
+}
+
+ .create_document_section
+{
+	width: 90%;
+	margin-top: 5%;
+}
+
+ .documents_vertical_main_list
+	{
+		width: 90%;
+		
+
+	}
+
+	.document_vertical_item
+	{
+		
+		display: flex;
+		width: 96.5%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+
+		
+	}
+
+	.document_feature_box{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.document_feature{
+		width: 90%;
+		height: 450px;
+
+	}
+}

@@ -1,0 +1,18 @@
+<section class="create_document_section">
+	<a href="/create">CREATE VEHICLE</a>
+</section>
+
+			<ul class="documents_vertical_main_list">
+				<% result.forEach((result) => { %>
+			       <li class="document_vertical_item">
+			       		<span class="text_vertical_item"><strong>Brand: </strong><%= result.brand %>		<strong>Model:</strong>  <%= result.model %>  </span>
+			       		<span class="delete_update_item">
+           						<a href="/update/<%= result._id %>">Update!!!</a>
+           						<a href="/remove/<%= result._id %>" onclick="return confirm('Deseja realmente excluir?')">Delete</a>
+       					</span>
+       				</li>
+
+      			<%}) %>
+
+      			
+			<ul>
