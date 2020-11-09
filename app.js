@@ -587,6 +587,14 @@ app.get('/apps_nodejs/zevcms/views/caminho', function (req, res) {
 
 
 
+var address,
+    ifaces = require('os').networkInterfaces();
+for (var dev in ifaces) {
+    ifaces[dev].filter((details) => details.family === 'IPv4' && details.internal === false ? address = details.address: undefined);
+}
+
+console.log(address)
+
 
 
 //Creates Node.JS server
