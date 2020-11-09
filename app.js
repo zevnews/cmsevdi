@@ -30,12 +30,12 @@ var database = "copia_evdi_kinghost";
 
 
 /* CONEXAO ALTAS*/
-/*var url = "mongodb+srv://zevnews:zevnews2020@zevnewsatlas.sqtdl.mongodb.net/zevnewsatlas?retryWrites=true&w=majority";
-var database = "zevnewsatlas";*/
+var url = "mongodb+srv://zevnews:zevnews2020@zevnewsatlas.sqtdl.mongodb.net/zevnewsatlas?retryWrites=true&w=majority";
+var database = "zevnewsatlas";
 
 /* CONEXAO UMBLER*/
-var url = "mongodb://zevcms:zevnews2020@geonosis.mongodb.umbler.com:37319/mongo_zcms";
-var database = "mongo_zcms";
+/*var url = "mongodb://zevcms:zevnews2020@geonosis.mongodb.umbler.com:37319/mongo_zcms";
+var database = "mongo_zcms";*/
 
 var collection1 = "vehicles";
 
@@ -585,7 +585,7 @@ app.get('/apps_nodejs/zevcms/views/caminho', function (req, res) {
 
 // END OF ROUTES FOR CRUD_VERSAO1
 
-
+/*
 
 var address,
     ifaces = require('os').networkInterfaces();
@@ -593,7 +593,7 @@ for (var dev in ifaces) {
     ifaces[dev].filter((details) => details.family === 'IPv4' && details.internal === false ? address = details.address: undefined);
 }
 
-console.log(address)
+console.log(address)*/
 
 
 
